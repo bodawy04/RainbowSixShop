@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GMC Project</title>
+    <link rel="stylesheet" href="../cssHabd/normalize.css">
+    <link rel="stylesheet" href="../cssHabd/main.css">
+    <link rel="stylesheet" href="../cssHabd/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./imgs/R6S_old_icon (1).png">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Nunito:wght@700&family=Roboto:wght@500&family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    
+    <header class="navbar navbar-expand-lg " id="nav">
+        <div class="container-fluid">
+            <div class="userProfile">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="data:image/jpeg;base64,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"
+                            alt="">
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">UserName</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Log in</a></li>
+                        <li><a class="dropdown-item" id="logOut" href="#">Log Out</a></li>
+                    </ul>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars nav-icon"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <div class="navItems">
+                        <ul class="nav-stuff">
+                            <li class="listItem"> <a href="#newsUpdate">
+                                News' Updates</a></li>
+                            <li class="listItem"><a href="#operators">
+                                Operators</a></li>
+                                <li class="listItem">
+                                    <a href="#opSkins">Operators' Skins</a>
+                                </li>
+                            <li class="listItem"><a href="#wpSkins">Weapons' Skins</a></li>
+                            <li class="listItem">
+                                <a href="https://www.ubisoft.com/en-gb/game/rainbow-six/siege/in-game-items">Bundles</a></li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="currency">
+            <p class="renown"><img src="./imgs/R6S-renown-icon.png" alt=""><span id="renown">10000</span></p>
+            <p class="r6crdt"><img src="./imgs/R6S-credits-icon (1).png" alt=""><span id="r6crdt">100</span></p>
+        </div>
+    </header>
+    <div class="load">
+        <img src="https://media.tenor.com/HD6sGbHdlIIAAAAd/r6sledge-crash.gif" alt="">
+    </div>
+    <section id="newsUpdate">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active" id="carItem">
+                    <a href="https://www.ubisoft.com/en-gb/game/rainbow-six/siege/news-updates/2sjhqfhPtIXahpoC0H6F5y/r6fix-rewards-update"><img
+                            src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5bzHBFcYhGZwUNfFLz4aht/1245c2ffe43bcadfd90551fb001cb508/Y7S4.R6Fix.Update.960x540.png"
+                            class="d-block w-100" alt="..."></a>
+                </div>
+                <div class="carousel-item" id="carItem">
+                    <a href="https://www.ubisoft.com/en-gb/game/rainbow-six/siege/news-updates/42o6BhsFgmPla9wmiJ5GnJ/y8s2-designers-notes"><img
+                            src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/490i2P9sr2fF1ZciSoO5wb/b180a88c3c4e545b2ef2e2b8d1ee96cf/R6_DesignersNotes_Y8S2.jpg"
+                            class="d-block w-100" alt="..."></a>
+                </div>
+                <div class="carousel-item" id="carItem">
+                    <a href="https://www.ubisoft.com/en-gb/game/rainbow-six/siege/news-updates/4m8fjcmROM4IJSNi58ZEM7/fear-is-a-teacher-theres-always-a-lesson-to-be-learned-fenrir"><img
+                            src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/sOA8oYLtJ4mU6T1Nr8bWe/b71227a01801fcffd643f4cb420ba4ae/R6S_Live_Y8S2_DreadFactor_OperatorKeyart_1920x1080_Textless.jpg"
+                            class="d-block w-100" alt="..."></a>
+                </div>
+                <div class="carousel-item" id="carItem">
+                    <a href="https://www.ubisoft.com/en-gb/game/rainbow-six/siege/news-updates/5q8GzILAUgryR22kCQRJVA/anticheat-status-update-may-2023"><img
+                            src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3ZPmAO7CCSb9jVCSAmkYPO/c4a5f4cf8a5353b21ba9e1d789602b2a/Anti-cheat_header_960x540.png"
+                            class="d-block w-100" alt="..."></a>
+                </div>
+                <div class="carousel-item" id="carItem">
+                    <a href="https://www.ubisoft.com/en-gb/game/rainbow-six/siege/news-updates/FJ5c2siBMvOhDxSEtfrMM/siege-enters-the-redbubble-fan-art-program"><img
+                            src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/658ht46PwwbVPpVso2BsXd/0ce1f4e7c66160a285fe315976ae9343/Prosterguy_Artwork_16x9.jpg"
+                            class="d-block w-100" alt="..."></a>
+                </div>
+                <div class="carousel-item" id="carItem">
+                    <a href="https://www.ubisoft.com/en-gb/game/rainbow-six/siege/news-updates/2g4xCvC8cWbIcddcgp8WJO/y8s1-midseason-roadmap-update"><img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/Oxr8eElg7jNHVWZNAxHJ5/be3e342b9e6e1a01684a0128f2905bc6/Y8S1.RoadmapUpdate.960x540.png"
+                        class="d-block w-100" alt="..."></a>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span aria-hidden="true"><i class="fa-solid fa-arrow-left"></i></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section class="operators" id="operators">
+        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+            <label class="btn btn-outline-primary btnBorder" id="btnradio1" for="btnradio1"><span id="choice">Attackers</span></label>
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+            <label class="btn btn-outline-primary btnBorder2" id="btnradio2" for="btnradio2"><span id="choice">Defenders</span></label>
+        </div>
+        <div class="attackersList">
+        </div>
+        <div class="defendersList hideList">
+        </div>
+    </section>
+    <section id="opSkins">
+        <div class="opSkins">
+        <div class="opskinList">
+            <button class="addCart">Add To Cart</button>
+            <img src="./imgs/Screenshot 2023-05-18 031202.png" alt="">
+        </div>
+        <div class="opskinList">
+            <button class="addCart">Add To Cart</button>
+        <img src="./imgs/Screenshot 2023-05-18 031241.png" alt="">
+    </div>
+        <div class="opskinList">
+            <button class="addCart">Add To Cart</button>
+        <img src="./imgs/Screenshot 2023-05-18 031327.png" alt="">
+    </div>
+        <div class="opskinList">
+            <button class="addCart">Add To Cart</button>
+            <img src="./imgs/Screenshot 2023-05-18 031202.png" alt="">
+        </div>
+        <div class="opskinList">
+            <button class="addCart">Add To Cart</button>
+        <img src="./imgs/Screenshot 2023-05-18 031241.png" alt="">
+    </div>
+        <div class="opskinList">
+            <button class="addCart">Add To Cart</button>
+        <img src="./imgs/Screenshot 2023-05-18 031327.png" alt="">
+    </div>
+        <div class="opskinList">
+            <button class="addCart">Add To Cart</button>
+            <img src="./imgs/Screenshot 2023-05-18 031202.png" alt="">
+        </div>
+        <div class="opskinList">
+            <button class="addCart">Add To Cart</button>
+        <img src="./imgs/Screenshot 2023-05-18 031241.png" alt="">
+    </div>
+        <div class="opskinList">
+            <button class="addCart">Add To Cart</button>
+        <img src="./imgs/Screenshot 2023-05-18 031327.png" alt="">
+    </div>
+        <div class="opskinList">
+            <button class="addCart">Add To Cart</button>
+            <img src="./imgs/Screenshot 2023-05-18 031202.png" alt="">
+        </div>
+        <div class="opskinList">
+            <button class="addCart">Add To Cart</button>
+        <img src="./imgs/Screenshot 2023-05-18 031241.png" alt="">
+    </div>
+        <div class="opskinList">
+            <button class="addCart">Add To Cart</button>
+        <img src="./imgs/Screenshot 2023-05-18 031327.png" alt="">
+    </div>
+    </div>
+    </section>
+    <section id="wpSkins">
+        <div class="wpSkins">
+            <div class="wpskinList">
+                <button class="addCart">Add To Cart</button>
+                <img src="./imgs/Screenshot 2023-05-18 031132.png" alt="">
+            </div>
+            <div class="wpskinList">
+                <button class="addCart">Add To Cart</button>
+                <img src="./imgs/Screenshot 2023-05-18 031055.png" alt="">
+            </div>
+            <div class="wpskinList">
+                <button class="addCart">Add To Cart</button>
+                <img src="./imgs/Screenshot 2023-05-18 031007.png" alt="">
+            </div>
+            <div class="wpskinList">
+                <button class="addCart">Add To Cart</button>
+                <img src="./imgs/Screenshot 2023-05-18 031132.png" alt="">
+            </div>
+            <div class="wpskinList">
+                <button class="addCart">Add To Cart</button>
+                <img src="./imgs/Screenshot 2023-05-18 031055.png" alt="">
+            </div>
+            <div class="wpskinList">
+                <button class="addCart">Add To Cart</button>
+                <img src="./imgs/Screenshot 2023-05-18 031007.png" alt="">
+            </div>
+            <div class="wpskinList">
+                <button class="addCart">Add To Cart</button>
+                <img src="./imgs/Screenshot 2023-05-18 031132.png" alt="">
+            </div>
+            <div class="wpskinList">
+                <button class="addCart">Add To Cart</button>
+                <img src="./imgs/Screenshot 2023-05-18 031055.png" alt="">
+            </div>
+            <div class="wpskinList">
+                <button class="addCart">Add To Cart</button>
+                <img src="./imgs/Screenshot 2023-05-18 031007.png" alt="">
+            </div>
+            <div class="wpskinList">
+                <button class="addCart">Add To Cart</button>
+                <img src="./imgs/Screenshot 2023-05-18 031132.png" alt="">
+            </div>
+            <div class="wpskinList">
+                <button class="addCart">Add To Cart</button>
+                <img src="./imgs/Screenshot 2023-05-18 031055.png" alt="">
+            </div>
+            <div class="wpskinList">
+                <button class="addCart">Add To Cart</button>
+                <img src="./imgs/Screenshot 2023-05-18 031007.png" alt="">
+            </div>
+        </div>
+    </section>
+        <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div id="counter" class="nDis">
+                <span id="cnt">0</span>
+            </div>
+            <div class="cartList noDis">
+            </div>
+            <h3 class="checkOut noDis">Proceed To Checkout</h3>
+        </div>
+    <footer>
+        CopyRights to <a href="http://https://www.ubisoft.com/en-gb/game/rainbow-six/siege">Rainbow Six Seige</a>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
